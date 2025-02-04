@@ -1,46 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot 1`] = `
-<View
-  accessibilityState={
-    {
-      "busy": undefined,
-      "checked": undefined,
-      "disabled": undefined,
-      "expanded": undefined,
-      "selected": undefined,
-    }
-  }
-  accessibilityValue={
-    {
-      "max": undefined,
-      "min": undefined,
-      "now": undefined,
-      "text": undefined,
-    }
-  }
-  accessible={true}
-  collapsable={false}
-  focusable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    {
-      "opacity": 1,
-    }
-  }
->
-  <Text>
-    Click Me
-  </Text>
-</View>
-`;
-
 exports[`test snapshot button matches snapshot 1`] = `
 <View
   accessibilityState={
@@ -76,7 +35,11 @@ exports[`test snapshot button matches snapshot 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    accessible={true}
+    role="button"
+    testID="textButton"
+  >
     Click Me
   </Text>
 </View>

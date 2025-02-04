@@ -9,7 +9,9 @@ type ButtonProps = {
 const Button = ({label, onPress}: ButtonProps) => {
   return (
     <TouchableOpacity onPress={onPress}>
-      <Text>{label}</Text>
+      <Text accessible={true} testID="textButton" role="button">
+        {label}
+      </Text>
     </TouchableOpacity>
   );
 };
